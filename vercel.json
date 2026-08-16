@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "builds": [
+    {"src": "abbas.py", "use": "@vercel/python"},
+    {"src": "index.html", "use": "@vercel/static"}
+  ],
+  "routes": [
+    {"src": "/gf", "dest": "abbas.py"},
+    {"src": "/(.*)", "dest": "index.html"}
+  ]
+}
